@@ -3,18 +3,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 200px;
+    gap: 40px;
+    margin: 80px auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 24px;
 
 }
 .services-title{
     position: relative;
+    margin-bottom: 0px;
 }
 .services-title h1{
     padding: 7px 1px;
     font-size: 29px;
     font-weight: 800;
-    margin-bottom: 13px;
+   
 }
 .services-title img{
     padding: 0px 2.5px;
@@ -22,9 +26,6 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    margin-bottom: 10px;
-    
-    
 }
 .services-format{
     display: flex;
@@ -40,15 +41,19 @@
 .services-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 10px;
+    width: 90%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .services-format h3{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
 }
 .services-format h2{
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 600;
     background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
     background-clip: text;
@@ -57,15 +62,9 @@
 }
 .services-format p{
     color: #d4d4d4;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
-    max-width: 400px;
-}
-.services-readmore{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
+    max-width: 300px;
 }
 .services-format:hover{
     border: 2px solid #ff00ff;
