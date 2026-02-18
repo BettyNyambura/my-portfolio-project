@@ -72,7 +72,7 @@
 }
 .contact-right input{
     border: none;
-    width: 400px;
+    width: 380px;
     height: 30px;
     padding-left: 20px;
     border-radius: 4px;
@@ -87,8 +87,8 @@
     color: white;
     border-radius: 50px;
     background: linear-gradient(250deg, #DF8908 -5%, #B415FF 100%);
-    font-size: 18px;
-    padding: 10px 40px;
+    font-size: 15px;
+    padding: 10px 30px;
     margin-bottom: 100px;
     cursor: pointer;
     transition: 0.3s;

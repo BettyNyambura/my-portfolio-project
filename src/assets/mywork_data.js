@@ -8,64 +8,67 @@ import project6_img from '../assets/proj8.JPG'
 const mywork_data = [
     {
         id: 1,
-        title: "Enterprise RAG Knowledge System",
-        impact: "Reduced document access time by 98% using LLM + Vector Search",
-        techStack: "AWS Bedrock • Pinecone • Neo4j • Azure",
+        title: "Enterprise RAG Chatbot",
+        impact: "Reduced policy document access time from 30 minutes to 2–3 seconds using LLMs and Vector Search",
+        techStack: "AWS Bedrock • Pinecone • Neo4j • Azure Bot Services • Python • Docker",
         img: project1_img,
-        problem: "Employees struggled to find relevant documents quickly, leading to wasted time and reduced productivity.",
+        problem: "Staff at a non-profit organization were spending up to 30 minutes searching for relevant policy documents, causing inefficiencies and frustration.",
         architectureImg: "/assets/rag-architecture.png",
         highlights: [
-            "Embedding strategy",
-            "Chunking logic",
-            "Async processing",
-            "Model evaluation"
+            "Designed a Retrieval-Augmented Generation (RAG) pipeline integrating LLM embeddings with vector search",
+            "Implemented intelligent document chunking for multi-page and multi-format documents",
+            "Built asynchronous Python backend to handle high concurrency and fast responses",
+            "Evaluated and selected models to achieve high retrieval accuracy and consistency",
+            "Integrated with Azure Bot Services for seamless access via Microsoft Teams"
         ],
         metrics: [
-            { label: "98% reduction in access time", value: "98%" },
-            { label: "83% faster processing", value: "83%" },
-            { label: "$8,800 annual cost savings", value: "$8,800" }
+            { label: "Reduction in document access time", value: "98%" },
+            { label: "Faster processing of queries", value: "83%" },
         ]
     },
     {
         id: 2,
-        title: "E-Commerce Analytics Dashboard",
-        impact: "Enabled real-time sales insights, boosting conversion by 22%",
-        techStack: "React • Node.js • MongoDB • Chart.js",
+        title: "GPU-Powered OCR Pipeline",
+        impact: "Reduced invoice processing time from 17 days to 3 days, saving over $8,800 annually in labor costs",
+        techStack: "Python • GPU Acceleration • Vision-Language Models • Azure AI Foundry • Docker • Async Processing",
         img: project2_img,
-        problem: "Lack of actionable analytics made it hard for managers to optimize sales strategies.",
-        architectureImg: "/assets/ecommerce-architecture.png",
+        problem: "Level 4 hospital staff were manually processing invoices, taking up to 17 days per batch, causing delays and high labor costs.",
+        architectureImg: "/assets/ocr-architecture.png",
         highlights: [
-            "Live data streaming",
-            "Custom charting",
-            "Role-based access",
-            "Automated reporting"
+            "Architected a GPU-powered Vision-Language Model (VLM) OCR system for high-volume document processing",
+            "Implemented precision prompt engineering for improved extraction accuracy",
+            "Optimized async Python pipelines for faster multi-page invoice processing",
+            "Structured OCR outputs into JSON for downstream use and integration",
+            "Evaluated multiple OCR models and benchmarked on FUNSD dataset to achieve 90% extraction accuracy"
         ],
         metrics: [
-            { label: "22% increase in conversion", value: "22%" },
-            { label: "Real-time insights", value: "Real-time" },
-            { label: "$5,200 monthly revenue boost", value: "$5,200" }
+            { label: "Reduction in processing time", value: "83%" },
+            { label: "Extraction accuracy achieved", value: "90%" },
+            { label: "Annual labor cost savings", value: "$8,800" },
+            { label: "Invoices processed per day (approx.)", value: "5x increase" }
         ]
     },
     {
         id: 3,
-        title: "Personal Portfolio Website",
-        impact: "Showcased skills and projects, leading to 3 job offers",
-        techStack: "Vite • React • CSS Modules • Netlify",
+        title: "Intelligent OCR Optimization",
+        impact: "Achieved 95% classification consistency and reduced document processing time by 60% using async LLM pipelines",
+        techStack: "Python • LLM Integration • Async Processing • JSON Structuring • OCR Systems • Docker",
         img: project3_img,
-        problem: "Needed a modern, responsive site to highlight experience and attract recruiters.",
-        architectureImg: "/assets/portfolio-architecture.png",
+        problem: "Existing OCR system was slow and inconsistent when processing multi-modal documents, causing delays and manual correction work.",
+        architectureImg: "/assets/ocr-optimization-architecture.png",
         highlights: [
-            "Responsive design",
-            "Lazy loading",
-            "SEO optimization",
-            "Continuous deployment"
+            "Integrated async Python LLMs to intelligently chunk and structure multi-modal OCR outputs",
+            "Optimized pipeline to reduce redundant processing and improve throughput",
+            "Transformed raw OCR outputs into structured JSON for downstream applications",
+            "Ensured high classification consistency across document types and formats",
+            "Benchmarking and fine-tuning to achieve 95%+ classification accuracy"
         ],
         metrics: [
-            { label: "3 job offers received", value: "3" },
-            { label: "100% mobile friendly", value: "100%" },
-            { label: "<1s load time", value: "<1s" }
+            { label: "Classification consistency", value: "95%" },
+            { label: "Reduction in processing time", value: "60%" },
+            { label: "Integration-ready structured outputs", value: "100%" }
         ]
-    }
+    },
 ];
  
 export default mywork_data;

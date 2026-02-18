@@ -118,7 +118,7 @@
 }
 .mywork-modal-content h2,
 .mywork-modal-content h3 {
-    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 52.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -151,7 +151,7 @@
     transition: background 0.2s, color 0.2s;
 }
 .mywork-modal-close:hover {
-    background: #6c2eb5;
+    background: #B923E1;
     color: #fff;
 }
 
