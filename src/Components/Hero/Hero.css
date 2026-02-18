@@ -44,12 +44,14 @@
     border-radius: 50px;
     border: 2px solid #FFF;
     cursor: pointer;
+    background: #646258;
 }
 .hero-connect:hover{
     border: 2px solid white;
 }
 .hero-resume:hover{
     border-color: #B415FF;
+    background: #363636;
 }
 @media(max-width:768px){
     .hero img{
