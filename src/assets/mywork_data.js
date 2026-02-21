@@ -1,7 +1,7 @@
-import project1_img from '../assets/proj1.svg'
+import project1_img from '../assets/policy_doc.png'
 import project2_img from '../assets/proj2.JPG'
 import project3_img from '../assets/proj7.JPG'
-import project4_img from '../assets/proj4.JPG'
+import project4_img from '../assets/architecture_policy.png'
 import project5_img from '../assets/project_2.svg'
 import project6_img from '../assets/proj8.JPG'
 
@@ -9,43 +9,45 @@ const mywork_data = [
     {
         id: 1,
         title: "Enterprise RAG Chatbot",
-        impact: "Reduced policy document access time from 30 minutes to 2–3 seconds using LLMs and Vector Search",
-        techStack: "AWS Bedrock • Pinecone • Neo4j • Azure Bot Services • Python • Docker",
+        impact: "Reduced policy document access time from 30 minutes to 2–3 seconds using LLMs, vector search, and knowledge graph reasoning",
+        techStack: [
+            "AWS Bedrock • Pinecone •Neo4j (Cypher) • Azure Bot Services • Python • Docker"
+        ],
         img: project1_img,
-        problem: "Staff at a non-profit organization were spending up to 30 minutes searching for relevant policy documents, causing inefficiencies and frustration.",
-        architectureImg: "/assets/rag-architecture.png",
+        extraImg: project1_img, 
+        problem: "Staff at a non-profit trade organization that works across Europe and Africa struggled to find relevant policy documents quickly due to complex, multi-format files and scattered knowledge",
+        architectureImg: project4_img,
         highlights: [
-            "Designed a Retrieval-Augmented Generation (RAG) pipeline integrating LLM embeddings with vector search",
-            "Implemented intelligent document chunking for multi-page and multi-format documents",
-            "Built asynchronous Python backend to handle high concurrency and fast responses",
-            "Evaluated and selected models to achieve high retrieval accuracy and consistency",
-            "Integrated with Azure Bot Services for seamless access via Microsoft Teams"
+            "Built a dual-retrieval RAG pipeline: vector search (Pinecone) + knowledge graph (Neo4j, Cypher queries)",
+            "Automated semantic chunking and embedding of multi-column PDFs using AWS Textract and Bedrock",
+            "Enabled hybrid search: semantic similarity and graph-based entity reasoning",
+            "Exposed backend via AWS API Gateway and Lambda, integrated with MS Teams via Azure Bot Service",
+            "Delivered contextual, accurate answers with conversation memory and fast response times"
         ],
         metrics: [
             { label: "Reduction in document access time", value: "98%" },
-            { label: "Faster processing of queries", value: "83%" },
+            { label: "Faster query processing", value: "83%" }
         ]
     },
     {
         id: 2,
-        title: "GPU-Powered OCR Pipeline",
-        impact: "Reduced invoice processing time from 17 days to 3 days, saving over $8,800 annually in labor costs",
-        techStack: "Python • GPU Acceleration • Vision-Language Models • Azure AI Foundry • Docker • Async Processing",
+        title: "Cloud-Hosted VLM OCR Pipeline",
+        impact: "Automated complex document extraction, reducing manual review cycles and enabling scalable, secure processing for high-volume workloads.",
+        techStack: "Python • Vision-Language Models • FastAPI • Google Cloud Run • Terrafoam • Docker • REST API • Prompt Engineering",
         img: project2_img,
-        problem: "Level 4 hospital staff were manually processing invoices, taking up to 17 days per batch, causing delays and high labor costs.",
+        problem: "Manual extraction of structured data from diverse documents was slow, error-prone, and not scalable for production needs.",
         architectureImg: "/assets/ocr-architecture.png",
         highlights: [
-            "Architected a GPU-powered Vision-Language Model (VLM) OCR system for high-volume document processing",
-            "Implemented precision prompt engineering for improved extraction accuracy",
-            "Optimized async Python pipelines for faster multi-page invoice processing",
-            "Structured OCR outputs into JSON for downstream use and integration",
-            "Evaluated multiple OCR models and benchmarked on FUNSD dataset to achieve 90% extraction accuracy"
+        "Deployed a Vision-Language Model (VLM) OCR service on Google Cloud using Terrafoam for rapid GPU provisioning",
+        "Exposed the VLM via FastAPI and Cloud Run for scalable, secure endpoint access",
+        "Engineered advanced prompts and context windows to maximize extraction accuracy and reliability",
+        "Designed a comprehensive Markdown output contract for structured, downstream-ready results",
+        "Benchmarked and iterated on prompt/context strategies to optimize for real-world document complexity"
         ],
         metrics: [
-            { label: "Reduction in processing time", value: "83%" },
-            { label: "Extraction accuracy achieved", value: "90%" },
-            { label: "Annual labor cost savings", value: "$8,800" },
-            { label: "Invoices processed per day (approx.)", value: "5x increase" }
+        { label: "Manual review reduction", value: "80%+" },
+        { label: "Extraction accuracy (complex docs)", value: "90%+" },
+        { label: "Concurrent document throughput", value: "Scalable (Cloud Run autoscaling)" }
         ]
     },
     {

@@ -27,7 +27,7 @@ const MyWork = () => {
             <img src={project.img} alt={project.title} className="mywork-card-img" />
             <div className="mywork-card-content">
               <h2>{project.title}</h2>
-              <p className="mywork-impact">{project.impact}</p>
+              <p className="mywork-impact">{project.title}</p>
               <p className="mywork-techstack">{project.techStack}</p>
             </div>
           </div>
@@ -39,13 +39,20 @@ const MyWork = () => {
           <div className="mywork-modal-content" onClick={e => e.stopPropagation()}>
             <button className="mywork-modal-close" onClick={handleCloseModal}>×</button>
             <h2>{selectedProject.title}</h2>
-            <p className="mywork-modal-impact">{selectedProject.impact}</p>
+            <p className="mywork-modal-impact">{selectedProject.title}</p>
             <p className="mywork-modal-techstack">{selectedProject.techStack}</p>
             <hr />
             <h3>Problem</h3>
             <p>{selectedProject.problem}</p>
             <h3>Architecture</h3>
             <img src={selectedProject.architectureImg} alt="Architecture Diagram" className="mywork-modal-architecture" />
+            {/* Show extra image for project 1 if present and not architecture */}
+            {selectedProject.extraImg && selectedProject.id === 1 && (
+              <>
+                <h3>Test UI</h3>
+                <img src={selectedProject.extraImg} alt="Test UI" className="mywork-modal-extra" />
+              </>
+            )}
             <h3>Technical Highlights</h3>
             <ul>
               {selectedProject.highlights.map((item, idx) => (

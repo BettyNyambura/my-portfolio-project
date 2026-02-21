@@ -157,12 +157,20 @@
 
 .mywork-modal-architecture {
     width: 100%;
-    max-height: 180px;
+    max-height: 400px;
     object-fit: contain;
     margin: 12px 0;
     
     background: #f7f7fa;
 }
+.mywork-modal-extra {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 12px 0;
+    
+    background: #f7f7fa;
+}   
 .mywork-modal-metrics {
     display: flex;
     flex-wrap: wrap;
@@ -216,7 +224,10 @@
         max-width: 98vw;
     }
     .mywork-modal-architecture {
-        max-height: 120px;
+        max-height: 300px;
+    }
+    .mywork-modal-extra {
+        max-height: 300px;
     }
     .mywork-modal-metrics {
         gap: 8px;
