@@ -1,5 +1,5 @@
 import project1_img from '../assets/policy_doc.png'
-import project2_img from '../assets/proj2.JPG'
+import project2_img from '../assets/cloud.png'
 import project3_img from '../assets/proj7.JPG'
 import project4_img from '../assets/architecture_policy.png'
 import project5_img from '../assets/project_2.svg'
@@ -8,7 +8,7 @@ import project6_img from '../assets/proj8.JPG'
 const mywork_data = [
     {
         id: 1,
-        title: "Enterprise RAG Chatbot",
+        title: "Enterprise RAG System for Policy Document Access",
         impact: "Reduced policy document access time from 30 minutes to 2–3 seconds using LLMs, vector search, and knowledge graph reasoning",
         techStack: [
             "AWS Bedrock • Pinecone •Neo4j (Cypher) • Azure Bot Services • Python • Docker"
@@ -52,7 +52,7 @@ const mywork_data = [
     },
     {
         id: 3,
-        title: "Intelligent OCR Optimization",
+        title: "Intelligent OCR-Output Structuring",
         impact: "Achieved 95% classification consistency and reduced document processing time by 60% using async LLM pipelines",
         techStack: "Python • LLM Integration • Async Processing • JSON Structuring • OCR Systems • Docker",
         img: project3_img,
