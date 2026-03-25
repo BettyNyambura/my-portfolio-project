@@ -26,7 +26,7 @@ const Hero = () => {
             <button className="mywork-modal-close" onClick={handleCloseModal}>×</button>
             <h2>My Resume</h2>
             <iframe
-              src="/resume.pdf"
+              src="/resume1.pdf"
               title="Resume PDF"
               width="100%"
               height="500px"
